@@ -15,10 +15,10 @@ Sub CreateChartObject2()
     sngTop = ActSht.Range("D7").Top
     Set chtObj = ActSht.ChartObjects.Add(sngLeft, sngTop, 550, 300)
     With chtObj.Chart
-        .SetSourceData ActSht.Range("A1£ºB6"), xlColumns
+        .SetSourceData ActSht.Range("A1Â£ÂºB6"), xlColumns
         .ChartType = xlColumnClustered
         .HasTitle = True
-        .ChartTitle.Text = "¸÷µêÏúÊÛÇé¿ö"
+        .ChartTitle.Text = "å„åº—é”€å”®æƒ…å†µ"
         With .Axes(xlValue, xlPrimary)
             .MaximumScale = 1000
             .MinimumScale = 0
@@ -28,7 +28,7 @@ Sub CreateChartObject2()
         End With
         Set Ser = .SeriesCollection.NewSeries
         With Ser
-            .Values = ActSht.Range("C2£ºC6")
+            .Values = ActSht.Range("C2Â£ÂºC6")
             .ChartType = xlLineMarkers
             .Name = ActSht.Range("C1")
             .AxisGroup = xlSecondary
