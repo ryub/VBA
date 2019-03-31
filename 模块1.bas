@@ -1,4 +1,4 @@
-Attribute VB_Name = "Ä£¿é1"
+Attribute VB_Name = "æ¨¡å—1"
 Function SeriesRange(SeriesIndex As Integer, cht As Chart) As Range
     Dim chtSeries As Series
     Set chtSeries = cht.SeriesCollection(SeriesIndex)
