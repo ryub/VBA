@@ -19,7 +19,7 @@ Sub CreateChartObject1()
         .SetSourceData ActSht.Range("A1:C6"), xlColumns
         .ChartType = xlColumnClustered
         .HasTitle = True
-        .ChartTitle.Text = "¸÷µêÏúÊÛÇé¿ö"
+        .ChartTitle.Text = "å„åº—é”€å”®æƒ…å†µ"
          With .Axes(xlValue, xlPrimary)
             .MaximumScale = 1000
             .MinimumScale = 0
